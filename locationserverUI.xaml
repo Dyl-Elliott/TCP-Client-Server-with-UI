@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="locationserver.locationserverUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:locationserver"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="779">
+    <Grid HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="778" Background="#FFFFFCD9">
+        <Label x:Name ="nLogFile" Content="Log File Location:" HorizontalAlignment="Left" Margin="8,99,0,0" VerticalAlignment="Top" Width="110" Height="34"/>
+        <Label x:Name ="nSaveFile" Content="Save File Location:" HorizontalAlignment="Left" Margin="3,151,0,0" VerticalAlignment="Top" Width="115" Height="34"/>
+        <Label x:Name ="Timeout" Content="Timeout:" HorizontalAlignment="Left" Margin="58,200,0,0" VerticalAlignment="Top" Width="60" Height="34"/>
+        <TextBox x:Name ="nLogFileTextBox" HorizontalAlignment="Left" Height="25" Margin="118,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name ="nSaveFileTextBox" HorizontalAlignment="Left" Height="26" Margin="118,153,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="159"/>
+        <TextBox x:Name ="nTimeoutTextBox" HorizontalAlignment="Left" Height="26" Margin="118,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159"/>
+        <CheckBox x:Name ="nDebugging" Content="Debug Information" HorizontalAlignment="Left" Margin="95,256,0,0" VerticalAlignment="Top" Height="21" Width="130"/>
+
+        <Button x:Name ="nRunServer" Content="Run Server" HorizontalAlignment="Left" Margin="101,298,0,0" VerticalAlignment="Top" Width="118" Click="nSubmit_Click" Background="#FFDDDDDD" Cursor="Hand" Height="27"/>
+
+
+        <ListView x:Name = "nListViewer" HorizontalAlignment="Left" Height="289" VerticalAlignment="Top" Width="390" Margin="287,71,0,0"/>
+        <Label Content="Server Window" HorizontalAlignment="Left" Margin="288,35,0,0" VerticalAlignment="Top" Width="148" FontWeight="Bold" FontSize="18" Height="36"/>
+    </Grid>
+</UserControl>
